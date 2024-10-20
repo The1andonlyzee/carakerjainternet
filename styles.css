@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    line-height: 1.6;
+}
+
+.judul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.judul h1{
+    font-size: 50px;
+}
+
+.judul p{
+
+}
+
+/* section {
+    margin-top: 40px;
+    margin-left: 20px;
+} */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.header {
+    width: 100%;
+    /* padding-top: 30px; */
+    height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkcyan;
+}
+
+.header-list {
+    list-style-type: none;
+    padding: 0;
+    width: 100% ;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.header-list-item {
+    background-color: darkcyan;
+   color: white;
+   width: 100%;
+   height: 100%;
+   border: none;
+   cursor: pointer;
+   font-size: 16px;
+   padding: 10px;
+}
+
+.header-list-item:hover {
+    background-color: darkslategray;
+}

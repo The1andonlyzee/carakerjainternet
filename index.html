@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How the Internet Works</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <ul class="header-list">
+            <button class="header-list-item" onclick="scrollToSection('http-section')">HTTP & HTTPS</button>
+            <button class="header-list-item" onclick="scrollToSection('domain-section')">Domain Names</button>
+            <button class="header-list-item" onclick="scrollToSection('hosting-section')">Hosting</button>
+            <button class="header-list-item" onclick="scrollToSection('dns-section')">DNS</button>
+            <button class="header-list-item" onclick="scrollToSection('browser-section')">Browsers</button>
+        </ul>
+    </header>
+
+    <section class="judul">
+        <h1>How the Internet Works</h1>
+        <p>Lets figure it out together!</p>
+    </section>
+    
+    <section id="http-section">
+        <h2>How HTTP and HTTPS Work</h2>
+        <p>HTTP (Hypertext Transfer Protocol) is a protocol used for transmitting data across the web. HTTPS is the secure version that uses encryption.</p>
+        <p><strong>HTTP:</strong> Works on port 80 and is unsecured, meaning data is transmitted as plain text.</p>
+        <p><strong>HTTPS:</strong> Works on port 443 and uses SSL/TLS for encryption, ensuring data is secure.</p>
+        <h3>How it works:</h3>
+        <ul>
+            <li>The client (browser) sends a request to the server for a webpage.</li>
+            <li>The server responds with the content, or if using HTTPS, it encrypts the content using an SSL certificate.</li>
+        </ul>
+        <img src="images/http-https-diagram.png" alt="HTTP and HTTPS Diagram">
+        
+    </section>
+
+    <section id="domain-section">
+        <h2>How Domain Names Work</h2>
+        <p>A domain name is a human-readable address used to access websites, such as "google.com". It maps to an IP address that a computer uses to locate the website.</p>
+        <h3>How it works:</h3>
+        <ul>
+            <li>When you enter a domain name in your browser, the browser queries a DNS (Domain Name System) server to resolve the domain name to its IP address.</li>
+            <li>Once the IP address is found, the browser can connect to the web server hosting the website.</li>
+        </ul>
+        <img src="images/domain-name-diagram.png" alt="Domain Name Diagram">
+    </section>
+
+    <section id="hosting-section">
+        <h2>How Hosting Works</h2>
+        <p>Web hosting refers to the service that stores your website's files on a server and makes them accessible on the internet.</p>
+        <h3>How it works:</h3>
+        <ul>
+            <li>When you purchase a hosting plan, you're essentially renting space on a web server.</li>
+            <li>Your website's files, such as HTML, CSS, and images, are stored on this server.</li>
+            <li>When someone visits your domain, the server sends the necessary files to their browser, allowing them to view the website.</li>
+        </ul>
+        <img src="images/hosting-diagram.png" alt="Hosting Diagram">
+      
+    </section>
+
+    <section id="dns-section">
+        <h2>How DNS Works</h2>
+        <p>The Domain Name System (DNS) translates domain names into IP addresses so that browsers can load internet resources.</p>
+        <h3>How it works:</h3>
+        <ul>
+            <li>When you enter a domain in your browser, your device sends a DNS query to a DNS server.</li>
+            <li>The DNS server looks up the IP address associated with that domain.</li>
+            <li>Once the IP address is found, your device can connect to the website's server.</li>
+        </ul>
+        <img src="images/dns-diagram.png" alt="DNS Diagram">
+    </section>
+
+    <section id="browser-section">
+        <h2>How Browsers Work</h2>
+        <p>Web browsers are software applications used to access websites. Popular browsers include Chrome, Firefox, and Safari.</p>
+        <h3>How it works:</h3>
+        <ul>
+            <li>The browser sends a request to the web server for the webpage’s files (HTML, CSS, JavaScript).</li>
+            <li>It interprets and renders the HTML to display the page visually.</li>
+            <li>JavaScript enhances interactivity, while CSS is used for styling.</li>
+        </ul>
+        <img src="images/browser-diagram.png" alt="Browser Diagram">
+    </section>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
